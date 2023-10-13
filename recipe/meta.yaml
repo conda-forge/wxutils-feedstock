@@ -11,13 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
 
 requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools >=45
+    - setuptools_scm >=6.2
   run:
     - python >=3.6
     - wxpython
