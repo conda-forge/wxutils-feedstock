@@ -1,5 +1,5 @@
 {% set name = "wxutils" %}
-{% set version = "2026.2.1" %}
+{% set version = "2026.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1ea04d747c67b8be34242a7970a05010f32cc71c3387f7c5a7fbec11df318ef9
+  sha256: dc2582cbea88262f3451dbec606f54454e90184573db550556bda80cfc29735a
 
 build:
   noarch: python
